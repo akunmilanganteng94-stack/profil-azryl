@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-heading: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-body: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: #f8fafc;
+    color: #0f172a;
+    user-select: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, .font-heading {
+    font-family: var(--font-heading);
+  }
+}
+
+/* Custom white & emerald glassmorphism effects */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(16, 185, 129, 0.18);
+  box-shadow: 
+    0 10px 30px -5px rgba(16, 185, 129, 0.08),
+    0 4px 12px -2px rgba(15, 23, 42, 0.04),
+    inset 0 1px 0 rgba(255, 255, 255, 0.95);
+}
+
+.glass-panel-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-panel-hover:hover {
+  background: rgba(255, 255, 255, 0.97);
+  border-color: rgba(16, 185, 129, 0.5);
+  box-shadow: 
+    0 20px 40px -10px rgba(16, 185, 129, 0.22),
+    0 0 25px 2px rgba(52, 211, 153, 0.25),
+    inset 0 1px 1px rgba(255, 255, 255, 1);
+  transform: translateY(-2px) scale(1.015);
+}
+
+/* Soft shimmer sheen */
+@keyframes sheen {
+  0% {
+    transform: translateX(-100%) rotate(25deg);
+  }
+  100% {
+    transform: translateX(250%) rotate(25deg);
+  }
+}
+
+.animate-sheen {
+  position: relative;
+  overflow: hidden;
+}
+
+.animate-sheen::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    60deg,
+    transparent 40%,
+    rgba(255, 255, 255, 0.3) 45%,
+    rgba(16, 185, 129, 0.2) 50%,
+    rgba(255, 255, 255, 0.3) 55%,
+    transparent 60%
+  );
+  transform: translateX(-100%) rotate(25deg);
+  animation: sheen 7s infinite ease-in-out;
+  pointer-events: none;
+}
+
+/* Floating animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-7px) rotate(0.5deg);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Radial light emerald vignette */
+.bg-vignette {
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.3) 0%, rgba(240, 253, 244, 0.75) 65%, rgba(220, 252, 231, 0.95) 100%);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #10b981;
+}
