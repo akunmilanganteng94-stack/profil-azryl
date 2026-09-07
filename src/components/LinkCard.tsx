@@ -65,37 +65,37 @@ export const LinkCard: React.FC<LinkCardProps> = ({ link, index }) => {
     switch (link.iconType) {
       case 'whatsapp':
         return (
-          <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-emerald-500 to-green-600 flex items-center justify-center text-white shadow-lg shadow-emerald-600/30 p-2.5">
+          <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-blue-700 via-blue-800 to-indigo-900 flex items-center justify-center text-white shadow-lg shadow-blue-950/30 p-2.5">
             <WhatsAppIcon className="w-6 h-6 text-white" />
           </div>
         );
       case 'whatsapp-channel':
         return (
-          <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-teal-500 to-emerald-600 flex items-center justify-center text-white shadow-lg shadow-teal-600/30 p-2.5">
+          <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-blue-600 via-indigo-700 to-slate-900 flex items-center justify-center text-white shadow-lg shadow-blue-950/30 p-2.5">
             <WhatsAppIcon className="w-6 h-6 text-white" />
           </div>
         );
       case 'persib':
         return (
-          <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-emerald-600 to-teal-700 flex items-center justify-center text-white shadow-lg shadow-emerald-700/30 p-2.5">
+          <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-blue-800 via-indigo-900 to-blue-950 flex items-center justify-center text-white shadow-lg shadow-blue-950/35 p-2.5">
             <PersibShieldIcon className="w-6 h-6 text-white" />
           </div>
         );
       case 'digital':
         return (
-          <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-emerald-500 via-teal-500 to-green-600 flex items-center justify-center text-white shadow-lg shadow-emerald-600/30 p-2.5">
+          <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-blue-600 via-indigo-600 to-sky-700 flex items-center justify-center text-white shadow-lg shadow-blue-900/30 p-2.5">
             <AlightMotionIcon className="w-6 h-6 text-white" />
           </div>
         );
       case 'tiktok':
         return (
-          <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-slate-900 via-emerald-950 to-slate-900 border border-emerald-500/40 flex items-center justify-center text-white shadow-lg shadow-emerald-950/40 p-2.5">
-            <TikTokIcon className="w-6 h-6 text-emerald-400 drop-shadow-[0_0_8px_rgba(52,211,153,0.5)]" />
+          <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 border border-blue-500/40 flex items-center justify-center text-white shadow-lg shadow-blue-950/40 p-2.5">
+            <TikTokIcon className="w-6 h-6 text-blue-300 drop-shadow-[0_0_8px_rgba(59,130,246,0.5)]" />
           </div>
         );
       default:
         return (
-          <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-emerald-500 to-green-600 flex items-center justify-center text-white p-2.5">
+          <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-blue-700 to-indigo-900 flex items-center justify-center text-white p-2.5">
             <Sparkles className="w-6 h-6 text-white" />
           </div>
         );
@@ -130,10 +130,10 @@ export const LinkCard: React.FC<LinkCardProps> = ({ link, index }) => {
         }}
         className={`
           group relative block w-full rounded-2xl p-4 sm:p-5
-          bg-white/90 backdrop-blur-2xl border border-emerald-100/90
-          shadow-[0_8px_25px_-5px_rgba(16,185,129,0.1),0_2px_10px_-2px_rgba(0,0,0,0.04)]
-          hover:shadow-[0_20px_40px_-10px_rgba(16,185,129,0.25),0_0_20px_2px_rgba(52,211,153,0.3)]
-          hover:border-emerald-400 hover:bg-white
+          bg-white/90 backdrop-blur-2xl border border-blue-100/90
+          shadow-[0_8px_25px_-5px_rgba(30,58,138,0.08),0_2px_10px_-2px_rgba(0,0,0,0.03)]
+          hover:shadow-[0_20px_40px_-10px_rgba(30,58,138,0.22),0_0_20px_2px_rgba(59,130,246,0.25)]
+          hover:border-blue-500 hover:bg-white
           overflow-hidden cursor-pointer select-none active:scale-[0.98] transition-all
         `}
       >
@@ -141,12 +141,12 @@ export const LinkCard: React.FC<LinkCardProps> = ({ link, index }) => {
         <div
           className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
           style={{
-            background: `radial-gradient(400px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(16,185,129,0.12), transparent 70%)`,
+            background: `radial-gradient(400px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(30,58,138,0.1), transparent 70%)`,
           }}
         />
 
         {/* Ambient Top Subtle Shimmer Edge */}
-        <div className="absolute top-0 inset-x-8 h-[1px] bg-gradient-to-r from-transparent via-emerald-400/50 to-transparent opacity-60 group-hover:opacity-100 transition-opacity duration-300" />
+        <div className="absolute top-0 inset-x-8 h-[1px] bg-gradient-to-r from-transparent via-blue-500/50 to-transparent opacity-60 group-hover:opacity-100 transition-opacity duration-300" />
 
         {/* Shimmer Sheen Reflection that runs across the card */}
         <div className="animate-sheen absolute inset-0 pointer-events-none rounded-2xl" />
@@ -163,11 +163,11 @@ export const LinkCard: React.FC<LinkCardProps> = ({ link, index }) => {
             {/* Texts */}
             <div className="flex flex-col min-w-0 text-left">
               <div className="flex items-center gap-2">
-                <span className="font-heading font-bold text-slate-900 text-base sm:text-lg tracking-wide group-hover:text-emerald-700 transition-colors truncate">
+                <span className="font-heading font-bold text-slate-900 text-base sm:text-lg tracking-wide group-hover:text-blue-900 transition-colors truncate">
                   {link.title}
                 </span>
                 {link.badge && (
-                  <span className="hidden xs:inline-block px-2 py-0.5 text-[10px] uppercase font-bold tracking-wider rounded-md bg-emerald-50 text-emerald-700 border border-emerald-200/80">
+                  <span className="hidden xs:inline-block px-2 py-0.5 text-[10px] uppercase font-bold tracking-wider rounded-md bg-blue-50 text-blue-900 border border-blue-200/80">
                     {link.badge}
                   </span>
                 )}
@@ -182,7 +182,7 @@ export const LinkCard: React.FC<LinkCardProps> = ({ link, index }) => {
           </div>
 
           {/* Right: Modern Arrow Button */}
-          <div className="flex-shrink-0 flex items-center justify-center w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-emerald-50 border border-emerald-200/60 group-hover:bg-emerald-500 group-hover:border-emerald-500 text-emerald-700 group-hover:text-white transition-all duration-300 shadow-sm group-hover:shadow-[0_0_15px_rgba(16,185,129,0.5)]">
+          <div className="flex-shrink-0 flex items-center justify-center w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-blue-50 border border-blue-200/60 group-hover:bg-blue-900 group-hover:border-blue-900 text-blue-900 group-hover:text-white transition-all duration-300 shadow-sm group-hover:shadow-[0_0_15px_rgba(30,58,138,0.4)]">
             <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 transition-transform duration-300 group-hover:translate-x-1" />
           </div>
         </div>
@@ -191,7 +191,7 @@ export const LinkCard: React.FC<LinkCardProps> = ({ link, index }) => {
         {ripples.map((ripple) => (
           <span
             key={ripple.id}
-            className="absolute rounded-full pointer-events-none bg-emerald-400/40 animate-ping"
+            className="absolute rounded-full pointer-events-none bg-blue-500/30 animate-ping"
             style={{
               left: ripple.x - 20,
               top: ripple.y - 20,

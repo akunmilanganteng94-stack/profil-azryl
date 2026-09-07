@@ -33,7 +33,7 @@ export const ParticlesCanvas: React.FC = () => {
 
     window.addEventListener('resize', handleResize);
 
-    const colors = ['#10b981', '#34d399', '#059669', '#6ee7b7', '#a7f3d0', '#ffffff'];
+    const colors = ['#1e3a8a', '#2563eb', '#1d4ed8', '#3b82f6', '#60a5fa', '#93c5fd', '#ffffff'];
     const particleCount = window.innerWidth < 768 ? 32 : 55;
     const particles: Particle[] = [];
 

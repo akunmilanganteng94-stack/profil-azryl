@@ -63,8 +63,8 @@ export default function App() {
           className="fixed inset-0 z-50 bg-slate-50 flex items-center justify-center pointer-events-none"
         >
           <div className="flex flex-col items-center gap-3">
-            <div className="w-10 h-10 rounded-full border-2 border-emerald-500 border-t-transparent animate-spin" />
-            <span className="font-heading font-bold text-xs tracking-widest text-emerald-700 uppercase">
+            <div className="w-10 h-10 rounded-full border-2 border-blue-800 border-t-transparent animate-spin" />
+            <span className="font-heading font-bold text-xs tracking-widest text-blue-900 uppercase">
               PROFIL AZRYL
             </span>
           </div>

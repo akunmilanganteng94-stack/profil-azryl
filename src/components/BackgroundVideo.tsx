@@ -37,16 +37,16 @@ export const BackgroundVideo: React.FC = () => {
         </video>
       )}
 
-      {/* 2. Luminous White & Emerald Aurora Glow Layer */}
+      {/* 2. Luminous White & Dark Blue Aurora Glow Layer */}
       <div 
-        className={`absolute inset-0 w-full h-full bg-gradient-to-b from-slate-50 via-[#f0fdf4] to-emerald-50/40 transition-opacity duration-1000 ${
+        className={`absolute inset-0 w-full h-full bg-gradient-to-b from-slate-50 via-[#f0f4fc] to-blue-100/40 transition-opacity duration-1000 ${
           videoLoaded && !videoError ? 'opacity-70' : 'opacity-100'
         }`}
       >
-        {/* Animated Emerald & Mint Light Orbs */}
-        <div className="absolute top-1/4 -left-20 w-96 h-96 rounded-full bg-emerald-400/25 blur-[120px] animate-pulse" />
-        <div className="absolute top-2/3 -right-20 w-96 h-96 rounded-full bg-green-400/20 blur-[140px] animate-pulse" style={{ animationDelay: '2s' }} />
-        <div className="absolute bottom-10 left-1/3 w-80 h-80 rounded-full bg-teal-300/25 blur-[130px] animate-pulse" style={{ animationDelay: '3.5s' }} />
+        {/* Animated Dark Blue & Royal Blue Light Orbs */}
+        <div className="absolute top-1/4 -left-20 w-96 h-96 rounded-full bg-blue-600/20 blur-[120px] animate-pulse" />
+        <div className="absolute top-2/3 -right-20 w-96 h-96 rounded-full bg-indigo-700/20 blur-[140px] animate-pulse" style={{ animationDelay: '2s' }} />
+        <div className="absolute bottom-10 left-1/3 w-80 h-80 rounded-full bg-sky-500/20 blur-[130px] animate-pulse" style={{ animationDelay: '3.5s' }} />
       </div>
 
       {/* 3. Pure White Translucent Glass Overlay */}
@@ -55,12 +55,12 @@ export const BackgroundVideo: React.FC = () => {
       {/* 4. Light Vignette Effect */}
       <div className="absolute inset-0 w-full h-full bg-vignette" />
 
-      {/* 5. Cyber Grid Overlay (subtle green tinted mesh) */}
+      {/* 5. Cyber Grid Overlay (subtle blue tinted mesh) */}
       <div 
-        className="absolute inset-0 w-full h-full opacity-[0.03] mix-blend-multiply"
+        className="absolute inset-0 w-full h-full opacity-[0.035] mix-blend-multiply"
         style={{
-          backgroundImage: `linear-gradient(to right, rgba(16, 185, 129, 0.4) 1px, transparent 1px),
-                            linear-gradient(to bottom, rgba(16, 185, 129, 0.4) 1px, transparent 1px)`,
+          backgroundImage: `linear-gradient(to right, rgba(30, 58, 138, 0.4) 1px, transparent 1px),
+                            linear-gradient(to bottom, rgba(30, 58, 138, 0.4) 1px, transparent 1px)`,
           backgroundSize: '36px 36px',
         }}
       />

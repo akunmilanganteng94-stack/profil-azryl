@@ -7,13 +7,13 @@ export const MiniStats: React.FC = () => {
   const getIcon = (name: string) => {
     switch (name) {
       case 'Users':
-        return <Users className="w-4 h-4 text-emerald-600" />;
+        return <Users className="w-4 h-4 text-blue-800" />;
       case 'Clapperboard':
-        return <Clapperboard className="w-4 h-4 text-teal-600" />;
+        return <Clapperboard className="w-4 h-4 text-indigo-800" />;
       case 'Sparkles':
-        return <Sparkles className="w-4 h-4 text-green-600" />;
+        return <Sparkles className="w-4 h-4 text-blue-700" />;
       default:
-        return <Sparkles className="w-4 h-4 text-emerald-600" />;
+        return <Sparkles className="w-4 h-4 text-blue-800" />;
     }
   };
 
@@ -22,12 +22,12 @@ export const MiniStats: React.FC = () => {
       {/* Section Header */}
       <div className="flex items-center justify-between px-2 mb-3.5">
         <div className="flex items-center gap-2">
-          <div className="w-1.5 h-3.5 rounded-full bg-emerald-500 shadow-[0_0_8px_#10b981]" />
+          <div className="w-1.5 h-3.5 rounded-full bg-blue-700 shadow-[0_0_8px_#1d4ed8]" />
           <h2 className="text-xs sm:text-sm font-bold tracking-widest uppercase font-heading text-slate-800">
             AZRYL DIGITAL
           </h2>
         </div>
-        <span className="text-[11px] font-mono font-semibold text-emerald-700 bg-emerald-50 border border-emerald-200/80 px-2 py-0.5 rounded-md">
+        <span className="text-[11px] font-mono font-semibold text-blue-900 bg-blue-50 border border-blue-200/80 px-2 py-0.5 rounded-md">
           ECOSYSTEM
         </span>
       </div>
@@ -40,18 +40,18 @@ export const MiniStats: React.FC = () => {
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.5 + idx * 0.08 }}
-            className="group relative rounded-xl p-3 sm:p-3.5 bg-white/90 backdrop-blur-xl border border-emerald-100/90 hover:border-emerald-400 hover:bg-white shadow-[0_4px_15px_-3px_rgba(16,185,129,0.08)] hover:shadow-[0_12px_25px_-5px_rgba(16,185,129,0.18)] transition-all duration-300 flex flex-col items-center text-center overflow-hidden hover:-translate-y-1"
+            className="group relative rounded-xl p-3 sm:p-3.5 bg-white/90 backdrop-blur-xl border border-blue-100/90 hover:border-blue-400 hover:bg-white shadow-[0_4px_15px_-3px_rgba(30,58,138,0.08)] hover:shadow-[0_12px_25px_-5px_rgba(30,58,138,0.18)] transition-all duration-300 flex flex-col items-center text-center overflow-hidden hover:-translate-y-1"
           >
             {/* Ambient subtle glow inside card */}
-            <div className="absolute -top-6 -right-6 w-14 h-14 rounded-full bg-emerald-400/10 blur-xl group-hover:bg-emerald-400/25 transition-colors" />
+            <div className="absolute -top-6 -right-6 w-14 h-14 rounded-full bg-blue-500/10 blur-xl group-hover:bg-blue-500/25 transition-colors" />
 
             {/* Icon */}
-            <div className="w-7 h-7 rounded-lg bg-emerald-50 border border-emerald-200/70 flex items-center justify-center mb-2 shadow-inner group-hover:scale-110 transition-transform">
+            <div className="w-7 h-7 rounded-lg bg-blue-50 border border-blue-200/70 flex items-center justify-center mb-2 shadow-inner group-hover:scale-110 transition-transform">
               {getIcon(stat.iconName)}
             </div>
 
             {/* Main Value / Headline */}
-            <span className="font-heading font-extrabold text-slate-900 text-sm sm:text-base tracking-wider group-hover:text-emerald-700 transition-colors">
+            <span className="font-heading font-extrabold text-slate-900 text-sm sm:text-base tracking-wider group-hover:text-blue-900 transition-colors">
               {stat.headline}
             </span>
 
